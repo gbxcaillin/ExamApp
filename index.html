@@ -349,8 +349,8 @@
   .res-card { background:white; border:0.5px solid var(--border); border-radius:var(--radius-lg); padding:16px 16px; margin-bottom:10px; display:flex; align-items:flex-start; gap:14px; box-shadow:var(--shadow-sm); transition:all var(--transition); }
   .res-card:hover { box-shadow:var(--shadow-md); transform:translateY(-1px); }
   .r-icon { width:36px; height:36px; border-radius:var(--radius-sm); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .r-cat { font-size:10px; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; margin-bottom:3px; }
   .r-cat { font-size:10px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:3px; }
-  .theme-dark .r-cat { color:#EC5C3B !important; }
   .r-title { font-size:14px; font-weight:600; color:var(--text-primary); margin-bottom:4px; letter-spacing:-0.01em; }
   .r-desc { font-size:12px; color:var(--text-muted); line-height:1.55; }
 
@@ -384,9 +384,9 @@
   .theme-dark .bottom-nav { background:rgba(26,31,46,0.97); border-color:rgba(255,255,255,0.08); }
   .theme-dark .tab-content { background:#001D34; }
   .theme-dark .q-body, .theme-dark .settings-group, .theme-dark .exam-setup-card, .theme-dark .sec-chip, .theme-dark .res-card { background:#001020; border-color:rgba(255,255,255,0.08); }
-  .theme-dark .opt { background:white; border-color:#d0c8c0; box-shadow:none; }
-  .theme-dark .opt:hover:not(.disabled) { background:#f5ede6; border-color:#001D34; }
-  .theme-dark .opt-l { background:white; border-color:#bbb; color:#001D34; }
+  .theme-dark .opt { background:#001D34; border-color:rgba(255,255,255,0.1); box-shadow:none; }
+  .theme-dark .opt:hover:not(.disabled) { background:#1f2840; }
+  .theme-dark .opt-l { background:#001020; border-color:rgba(255,255,255,0.12); color:#9aa5be; }
   .theme-dark .seg-ctrl { background:#001D34; border-color:rgba(255,255,255,0.1); }
   .theme-dark .text-preview { background:#001D34; border-color:rgba(255,255,255,0.08); }
   .theme-dark .text-preview-opt { background:#001020; border-color:rgba(255,255,255,0.1); }
@@ -404,8 +404,7 @@
   .theme-dark .weak-areas-title { background:#001020; }
   .theme-dark .weak-area-name { color:#e8ecf4; }
   .theme-dark .weak-area-pct { color:#eb5757; }
-  .theme-dark .btn-o, .theme-dark .btn-prev-exams { background:#001020; color:#e8ecf4; border-color:rgba(255,255,255,0.12); }
-  .theme-dark .btn-prev-q { background:white; color:#001D34; border-color:#001D34; }
+  .theme-dark .btn-o, .theme-dark .btn-prev-q, .theme-dark .btn-prev-exams { background:#001020; color:#e8ecf4; border-color:rgba(255,255,255,0.12); }
   .theme-dark .btn-p { border:1px solid rgba(255,255,255,0.18); }
   .theme-dark .exam-setup-card { background:#001020; border-color:rgba(255,255,255,0.08); }
   .theme-dark .exam-opt { background:#001020; border-color:rgba(255,255,255,0.1); box-shadow:none; }
@@ -439,9 +438,9 @@
   .theme-dark .q-body { background:#001D34; }
   .theme-dark .q-tag { background:rgba(255,255,255,0.07); color:#9aa5be; }
   .theme-dark .q-text { color:#e8ecf4; }
-  .theme-dark .expl-box.correct { background:#001D34; border-color:rgba(30,110,66,0.4); }
-  .theme-dark .expl-box.incorrect { background:#001D34; border-color:rgba(168,50,40,0.4); }
-  .theme-dark .expl-t { color:rgba(255,255,255,0.85); }
+  .theme-dark .expl-box.correct { background:#0f2818; border-color:rgba(111,207,151,0.25); }
+  .theme-dark .expl-box.incorrect { background:#2a0f0e; border-color:rgba(235,87,87,0.25); }
+  .theme-dark .expl-t { color:#e8ecf4; }
   .theme-dark #pq-scenario-block { background:rgba(255,255,255,0.05); }
   .theme-dark .sec-chip.sel { background:#0a2d4a; border-color:#f07d61; transform:scale(1.02); }
   .theme-dark .s-name { color:#e8ecf4; }
@@ -465,10 +464,8 @@
   .theme-dark .elo-time { color:#5a6a8a; }
   .theme-dark .exam-length-opt.active .elo-name, .theme-dark .exam-length-opt.active .elo-num, .theme-dark .exam-length-opt.active .elo-time { color:#f07d61; }
   .theme-dark .results-view { background:#001D34; }
-  .theme-dark .opt-t { color:#001D34; }
   .theme-dark .opt.correct .opt-l { background:var(--correct); border-color:var(--correct); color:white; }
   .theme-dark .opt.incorrect .opt-l { background:var(--incorrect); border-color:var(--incorrect); color:white; }
-  .theme-dark .opt.correct .opt-t, .theme-dark .opt.incorrect .opt-t { color:#001D34; }
   .theme-dark .setup-lbl { color:#e8ecf4; }
   .theme-dark .setup-sub { color:#5a6a8a; }
   .theme-dark .warn-box { background:rgba(236,92,59,0.1); border-color:rgba(236,92,59,0.3); color:#EC5C3B; }
@@ -506,7 +503,6 @@
   .theme-dark .home-progress-track { background:rgba(255,255,255,0.06); }
   .theme-dark .result-score-lbl { color:#9aa5be; }
   .theme-dark .sec-chip { background:#001020; }
-  .theme-dark .s-icon { background:rgba(255,255,255,0.06) !important; }
                 .theme-dark .opt-l { border-radius:50%; }
   .theme-dark .exam-setup-card { box-shadow:none; }
   .theme-dark .home-progress-title { color:rgba(255,255,255,0.35); }
@@ -1227,7 +1223,7 @@
           <div style="margin-left:8px;align-self:center;flex-shrink:0;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
         </div>
         </a>
-        <a href="https://www.penguin.com.au/books/thinking-fast-and-slow-9780141033570" target="_blank" rel="noopener" style="text-decoration:none;display:block;">
+        <a href="https://raw.githubusercontent.com/gbxcaillin/Adviserexam/main/kahneman-thinking-fast-and-slow.pdf" download="kahneman-thinking-fast-and-slow.pdf" target="_blank" rel="noopener" style="text-decoration:none;display:block;">
         <div class="res-card" style="cursor:pointer;border-left:3px solid #993556;">
           <div class="r-icon" style="background:#f7f0fb;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6b3aa0" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a7.5 7.5 0 0113 0"/></svg></div>
           <div style="flex:1;"><div class="r-cat" style="color:#6b3aa0;">Behavioural finance</div><div class="r-title">Kahneman — Thinking, Fast and Slow</div><div class="r-desc">Foundational text on cognitive and emotional biases, prospect theory and loss aversion.</div></div>
@@ -1575,7 +1571,7 @@
   // ── REPORT AN ISSUE ──────────────────────────────────────────────
   function reportAnIssue() {
     const SUPPORT_EMAIL = 'support@gbxps.com'; // Change this when ready
-    const APP_VERSION = 'v188';
+    const APP_VERSION = 'v189';
     const subject = '[FASEA Exam Trainer] Issue Report — ' + APP_VERSION;
 
     // Gather diagnostic info to pre-fill the email body
@@ -3249,7 +3245,7 @@
     // Restore text size preference
 
   // ── GOOGLE SHEETS LIVE QUESTION FETCH ────────────────────────────────────
-  var APP_VERSION = 'v188';
+  var APP_VERSION = 'v189';
   const SHEET_ID = '11q3Fq35nPEKCXyVA8R3JJt8PJ72BL3pA';
   const PUB_KEY = '2PACX-1vSTsCvhrhFVnMPhrrOMLr852XdOquXen83Ne6KKSGyLxNP2MGRyHEflMiHfDUcTBg';
   const SHEET_TABS = {
